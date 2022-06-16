@@ -24,7 +24,48 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "content",
+              "mimeType": "text/plain",
+              "pathPattern": "*.txt"
+            },
+            {
+              "scheme": "file",
+              "mimeType": "text/plain",
+              "pathPattern": "*.txt"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        },
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "content",
+              "mimeType": "text/markdown",
+              "pathPattern": "*.md"
+            },
+            {
+              "scheme": "file",
+              "mimeType": "text/markdown",
+              "pathPattern": "*.md"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "package": "com.brents.intentse"
     },
     "web": {
       "favicon": "./assets/favicon.png"
